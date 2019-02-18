@@ -23,3 +23,8 @@
 /nbdist/
 /.nb-gradle/
 /build/
+
+### Maven wrapper ###
+mvnw
+*.cmd
+.mvn/
