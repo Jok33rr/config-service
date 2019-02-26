@@ -18,12 +18,13 @@ import static com.smarthouse.config.ConfigTestUtil.*;
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
 public class ConfigServiceApplicationTest {
 
+    private static final String LOCALHOST = "http://localhost";
     @Value("${server.port}")
-    int port;
+    private int port;
 
     @Before
     public void setUp() {
-        RestAssured.baseURI = "http://localhost";
+        RestAssured.baseURI = LOCALHOST;
         RestAssured.port = port;
     }
 
