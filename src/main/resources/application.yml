@@ -7,4 +7,4 @@ spring:
       server:
         git:
           uri: https://github.com/iBryukh/config-properties
-          searchPaths: gateway, user, device
+          searchPaths: gateway-service, user-service, device-service
